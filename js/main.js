@@ -3,21 +3,23 @@ $('#section__slider').slick({
     dots: true
 });
 
-$('#banner').slick({
-    dots: true,
-    autoplay: true,
-    arrows: false,
-    infinite: true,
-    speed: 3000,
-    fade: true,
-    cssEase: 'linear'
-});
 
 $(function () {
 
     $(".header__burger").on("click", function () {
         $(".header__nav__menu").toggleClass("header__nav__mobile")
     });
+    
+    
+    $(".home__article__title__each").each(function (i) {
+        setTimeout(function () {
+            $(".home__article__title__each").eq(i).css({
+                "opacity":"1", "top":"0"
+            });
+
+        }, 250 * (i + 1));
+    });
+
 
 
     $(".gallery__list__item:first-child").addClass("gallery__list__item--active");
