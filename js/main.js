@@ -13,9 +13,7 @@ $(function () {
     
     $(".home__article__title__each").each(function (i) {
         setTimeout(function () {
-            $(".home__article__title__each").eq(i).css({
-                "opacity":"1", "top":"0"
-            });
+            $(".home__article__title__each").eq(i).addClass("home__article__title__each__load")
 
         }, 250 * (i + 1));
     });
