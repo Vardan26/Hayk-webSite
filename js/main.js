@@ -9,15 +9,14 @@ $(function () {
     $(".header__burger").on("click", function () {
         $(".header__nav__menu").toggleClass("header__nav__mobile")
     });
-    
-    
+
+
     $(".home__article__title__each").each(function (i) {
         setTimeout(function () {
             $(".home__article__title__each").eq(i).addClass("home__article__title__each__load")
 
-        }, 250 * (i + 1));
+        }, 150 * (i + 1));
     });
-
 
 
     $(".gallery__list__item:first-child").addClass("gallery__list__item--active");
@@ -96,49 +95,34 @@ $(window).scroll(function () {
         "transform": "translate(0px, " + wScroll / 30 + "%)rotate(8deg)"
     });
 
-    if (wScroll > $(".section__biography").offset().top - $(window).height()) {
-        $(".section__biography__shape").css({
-            "transform": "translate(0px, -" + wScroll / 30 + "%)rotate(-8deg)"
+    $(".section__biography__shape").css({
+        "transform": "translate(0px, -" + wScroll / 30 + "%)rotate(-8deg)"
+    });
+
+    $(".section__paint__shape")
+        .css({
+            'transform': 'rotate(' + (wScroll * 0.2) + 'deg)'
         });
 
-    }
-    if (wScroll > $(".section__paint").offset().top - $(window).height()) {
-        $(".section__paint__shape")
-            .css({
-                'transform': 'rotate(' + (wScroll * 0.2) + 'deg)'
-            });
-    }
-    if (wScroll > $(".section__video").offset().top - $(window).height()) {
-        $(".section__video__shape").css({
-            "transform": "translate( " + wScroll / 80 + "%, 0px) rotate(20deg)"
-        });
+    $(".section__video__shape").css({
+        "transform": "translate( " + wScroll / 80 + "%, 0px) rotate(20deg)"
+    });
 
-    }
 });
 
 
 //popUp
-(function ($) {
-
-    $('.gallery__item').swipebox({
-        useCSS: true, // false will force the use of jQuery for animations
-        useSVG: true, // false to force the use of png for buttons
-        initialIndexOnArray: 0, // which image index to init when a array is passed
-        hideCloseButtonOnMobile: false, // true will hide the close button on mobile devices
-        removeBarsOnMobile: true, // false will show top bar on mobile devices
-        hideBarsDelay: 3000, // delay before hiding bars on desktop
-        videoMaxWidth: 1140, // videos max width
-        beforeOpen: function () {
-        }, // called before opening
-        afterOpen: null, // called after opening
-        afterClose: function () {
-        }, // called after closing
-        loopAtEnd: false // true will return to the first image after the last image is reached
-    });
-
-})(jQuery);
+lightGallery(document.getElementById('lightgallery--abstract'));
+lightGallery(document.getElementById('lightgallery--portrait'));
+lightGallery(document.getElementById('lightgallery--landscape'));
+lightGallery(document.getElementById('lightgallery--flower'));
+lightGallery(document.getElementById('lightgallery--women'));
+lightGallery(document.getElementById('lightgallery--barelef'));
+lightGallery(document.getElementById('lightgallery--drawing'));
 
 
+
+// map
 function initMap() {
     // Create a map object and specify the DOM element for display.
     var myLatLng = {lat: 39.7573171, lng: 45.3325};
