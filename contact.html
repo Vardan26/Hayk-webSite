@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Julius+Sans+On|Titillium+Web" rel="stylesheet">
     <script src="js/prefixfree.min.js"></script>
+
 </head>
 
 <body class="body body--contact">
@@ -30,11 +32,11 @@
 <div class="page-wrap page__wrap--contact">
 
 
-    <form class="contact__form" method="post">
-        <input type="text" placeholder="name" class="contact__form__input">
-        <input type="email" placeholder="email" class="contact__form__input">
-        <textarea type="text" class="contact__form__input contact__form__input--txt"></textarea>
-        <input type="submit" class="contact__form__input contact__form__input--btn">
+    <form class="contact__form" action="main.php" method="POST">
+        <input type="text" placeholder="name" name="name" class="contact__form__input">
+        <input type="email" placeholder="email" name="email" class="contact__form__input">
+        <textarea type="text" name="message" class="contact__form__input contact__form__input--txt"></textarea>
+        <input type="submit" name="submit" class="contact__form__input contact__form__input--btn">
     </form>
 
     <div class="contact__map">
@@ -63,7 +65,9 @@
         </a>
     </div>
 </footer>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj-OfePTTfiqfiLGZf38tHfUj4NJG1drQ&callback=initMap" async defer></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj-OfePTTfiqfiLGZf38tHfUj4NJG1drQ&callback=initMap" async
+        defer></script>
 <script src="js/vendor/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/plugins.js"></script>
