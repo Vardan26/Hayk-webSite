@@ -174,26 +174,26 @@ body, html {
   }
   &__shape--top {
     position: absolute;
-    top: -250px;
-    left: -500px;
+    bottom: 60%;
+    left: -150px;
     width: 2000px;
-    height: 550px;
+    height: 100vh;
     z-index: 2;
-    background: linear-gradient(to right top, rgba(52, 19, 12, 0.8), rgba(0, 0, 0, 0.8));
-    transform: rotate(-15deg);
-    box-shadow: rgba(0, 0, 0, 0.4) 0 10px 20px;
+    background: linear-gradient(to right top, rgba(52, 19, 12, 0.6), rgba(0, 0, 0, 0.8));
+    transform: rotate(-10deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 20px;
 
   }
   &__shape--bottom {
     position: absolute;
-    top: 500px;
-    left: -300px;
+    top: 70%;
+    left: -100px;
     width: 2000px;
     height: 550px;
     z-index: 10;
     background: linear-gradient(to left top, #130806,rgb(87, 52, 33));
     transform: rotate(8deg);
-    box-shadow: rgba(0, 0, 0, 0.4) 0 -10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 -10px 20px;
 
   }
   &__banner {
@@ -210,11 +210,12 @@ body, html {
     background-size: cover;
 
     &__title {
-      position: absolute;
+      position: relative;
       top: 30%;
       text-align: left;
       text-transform: capitalize;
-      padding-left: 100px;
+      max-width: 1200px;
+      margin: 0 auto;
       z-index: 5;
       width: 100%;
       color: #fff;

@@ -89,7 +89,7 @@ $(window).scroll(function () {
         "transform": "translate(0px, " + wScroll / 4 + "%)"
     });
     $(".header__shape--top").css({
-        "transform": "translate(0px, -" + wScroll / 6 + "%)rotate(-15deg)"
+        "transform": "translate(0px, -" + wScroll / 6 + "%)rotate(-10deg)"
     });
     $(".header__shape--bottom").css({
         "transform": "translate(0px, " + wScroll / 30 + "%)rotate(8deg)"
