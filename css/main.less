@@ -186,7 +186,7 @@ body, html {
     overflow: hidden;
     display: block;
     min-height: 100vh;
-    box-shadow: #000 0 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 20px;
     z-index: 5;
   }
   &__shape--top {
@@ -765,6 +765,9 @@ li.slick-active button:before {
 }
 
 @media (min-width: 1200px) {
+  .header__banner__title{
+    padding: 0 50px;
+  }
 
 }
 
@@ -895,10 +898,10 @@ li.slick-active button:before {
       }
     }
     &__shape--top {
-      top: -350px;
+      bottom: 70%;
     }
     &__shape--bottom {
-      top: 450px;
+      top: 80%;
     }
     &__banner__title {
       font-size: 40px;
