@@ -21,39 +21,34 @@
         <nav class="header__nav__menu">
             <ul>
                 <li class="header__nav__item"><a href="index.html">home</a></li>
-                <li class="header__nav__item"><a href="aboute.html">who i am</a></li>
                 <li class="header__nav__item"><a href="gallery.html">gallery</a></li>
-                <li class="header__nav__item"><a href="contact.html">contacts</a></li>
+                <li class="header__nav__item header__nav__item__active"><a href="contact.html">contacts</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
 <h2 class="contact__title">Contacts</h2>
 
 <div class="page-wrap page__wrap--contact">
-
-
-    <form class="contact__form" method="POST">
-        <input type="text" placeholder="name" name="name" class="contact__form__input">
-        <input type="email" placeholder="email" name="email" class="contact__form__input">
-        <textarea type="text" name="message" class="contact__form__input contact__form__input--txt"></textarea>
-        <input type="submit" name="submit" class="contact__form__input contact__form__input--btn">
-    </form>
+    <article class="contact__article">
+        <span class="contact__article__item contact__address">
+            <i class="fa fa-home contact__article__item__icon" aria-hidden="true"></i>
+            Baghramyan 1/<br> Yeghegnadzor / Armenia</span>
+        <a href="callto:+37493687017"   class="contact__article__item contact__tel">
+            <i class="fa fa-phone contact__article__item__icon" aria-hidden="true"></i>
+            (+374) 93 68 70 17
+        </a>
+        <a href="mailto:0037493687017h@gmail.com" class="contact__article__item contact__mail">
+            <i class="fa fa-envelope-o contact__article__item__icon" aria-hidden="true"></i>
+            0037493687017h@gmail.com
+        </a>
+    </article>
 
     <div class="contact__map">
         <div id="map" class="map" style="width:100%;height:300px">
-
         </div>
     </div>
-
-    <article class="contact__article">
-        <a href="callto:+37493687017" class="contact__article__item contact__tel">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            (+374)93 68 70 17</a>
-        <a href="mailto:0037493687017h@gmail.com" class="contact__article__item contact__mail">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            0037493687017h@gmail.com</a>
-    </article>
 </div>
 
 <footer class="footer">

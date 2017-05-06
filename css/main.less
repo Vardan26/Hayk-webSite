@@ -58,6 +58,7 @@ body, html {
       font: 22px 'Roboto', sans-serif, lighter;
       position: relative;
     }
+    &__item__active,
     &__item:hover {
       color: #89edd2;
     }
@@ -75,19 +76,9 @@ body, html {
 
 }
 
-.body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.page-wrap {
+  position: relative;
+  display: block;
 }
 
 //home
@@ -95,324 +86,242 @@ body, html {
 //home video
 .banner--video {
   position: fixed;
-  bottom: 0;
-  top: 0;
-  right: 0;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
+  height: 100vh;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
+  margin: 0 auto;
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.8;
+  opacity: .8;
+  bottom: 0;
 }
 
-.video-controls {
-  z-index: 10;
-  bottom: 50px;
-  margin: 0 auto;
-  position: absolute;
-
-}
-
-.page-wrap {
-  position: relative;
+.page-wrap--home {
+  width: 100%;
+  height: 100vh;
   display: block;
-}
+  position: relative;
+  margin-top: -150px;
+  overflow: hidden;}
 
 .page-wrap--home::before {
   content: "";
-  position: fixed;
-  background: rgba(58, 41, 41, 0.6) center;
+  position: absolute;
+  background: rgba(58,41,41,0.6) center;
   background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
 }
+
 .home {
-  &__article {
+  &__article__title {
     display: block;
-    position: relative;
-    &__title {
-      font-size: 65px;
-      font-weight: lighter;
-      color: #fff;
-      text-align: center;
-      text-transform: capitalize;
-      font-family: 'Julius Sans One', sans-serif;
-      margin-bottom: 100px;
-      z-index: 10;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    font-size: 65px;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Julius Sans One',sans-serif;
+    z-index: 1;
+    text-shadow: #000 5px 5px 8px;
+    &__each {
+      display: inline;
+      width: auto;
       position: relative;
-      display: block;
-      text-shadow: #000 5px 5px 8px;
-      &__each {
-        display: inline;
-        width: auto;
-        position: relative;
-        -webkit-transition: 1.5s;
-        transition: 1.5s;
-        opacity: 0;
-        top: -10px;
-        &__load {
-          top: 0;
-          opacity: 1;
-        }
+      -webkit-transition: 1.5s;
+      transition: 1.5s;
+      opacity: 0;
+      top: -10px;
+      &__load {
+        top: 0;
+        opacity: 1;
       }
     }
-
-  }
-  &__audio {
-    display: block;
-    padding: 0 50px;
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    background: transparent;
-    z-index: 999;
   }
 
 }
 
 //about
-.header {
-  &__about {
-    position: relative;
-    height: 100%;
+
+.section {
+  min-height: 450px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  &__txt {
+    max-width: 1100px;
     width: 100%;
-    overflow: hidden;
+    font: 30px "Titillium Web", sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    padding: 15px 25px;
+    top: 50%;
+    left: 50%;
     display: block;
-    min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 20px;
-    z-index: 5;
-  }
-  &__shape--top {
     position: absolute;
-    bottom: 60%;
-    left: -150px;
-    width: 2000px;
-    height: 100vh;
-    z-index: 2;
-    background: -webkit-linear-gradient(left bottom, rgba(52, 19, 12, 0.6), rgba(0, 0, 0, 0.8));
-    background: linear-gradient(to right top, rgba(52, 19, 12, 0.6), rgba(0, 0, 0, 0.8));
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 20px;
-
-  }
-  &__shape--bottom {
-    position: absolute;
-    top: 70%;
-    left: -100px;
-    width: 2000px;
-    height: 550px;
     z-index: 10;
-    background: -webkit-linear-gradient(right bottom, #130806, rgb(87, 52, 33));
-    background: linear-gradient(to left top, #130806, rgb(87, 52, 33));
-    -webkit-transform: rotate(8deg);
-    transform: rotate(8deg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0 -10px 20px;
-
+    text-shadow: #000 2px 2px 3px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
-  &__banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    min-width: 100%;
-    width: auto;
-    display: block;
-    background: url("../img/banner01.jpg") fixed center right;
+
+  &__biography {
+    margin: 0 auto;
+    min-height: 450px;
+    height: auto;
+    position: relative;
+    background: url("../img/Hayk BG 03.jpg") fixed top center;
     background-size: cover;
 
-    &__title {
-      position: relative;
-      top: 30%;
-      text-align: left;
-      text-transform: capitalize;
-      max-width: 1200px;
-      margin: 0 auto;
-      z-index: 5;
-      width: 100%;
-      color: #fff;
-      font: 45px 'Titillium Web', sans-serif;
-      line-height: 60px;
-      text-shadow: #000 3px 2px 3px;
+    &__txt {
+      text-align: right;
     }
+
+  }
+  &__biography::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3) fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  &__biography__shape {
+    position: absolute;
+    bottom: -200px;
+    right: -100px;
+    width: 1200px;
+    height: 300px;
+    z-index: 0;
+    background: -webkit-linear-gradient(right bottom, #41bfb5, #ac9da1);
+    background: linear-gradient(to left top, #41bfb5, #ac9da1);
+    opacity: 0.5;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    box-shadow: #000 5px -5px 20px;
   }
 
-}.section {
-   min-height: 450px;
-   position: relative;
-   height: 100%;
-   width: 100%;
-   overflow: hidden;
-   display: block;
-   &__txt {
-     max-width: 1100px;
-     width: 100%;
-     font: 30px "Titillium Web", sans-serif;
-     color: #fff;
-     margin: 0 auto;
-     padding: 15px 25px;
-     top: 50%;
-     left: 50%;
-     display: block;
-     position: absolute;
-     z-index: 10;
-     text-shadow: #000 2px 2px 3px;
-     -webkit-transform: translate(-50%, -50%);
-     transform: translate(-50%, -50%);
-   }
+  &__paint {
+    background: url("../img/paint-ston.JPG") center;
+    background-size: auto 100%;
+    position: relative;
+    min-height: 400px;
+    height: auto;
+    z-index: 1;
+    &__txt {
+      text-align: left;
+    }
 
-   &__biography {
-     margin: 0 auto;
-     min-height: 450px;
-     height: auto;
-     position: relative;
-     background: url("../img/Hayk BG 03.jpg") fixed top center;
-     background-size: cover;
+  }
+  &__paint::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  &__paint__shape {
+    position: absolute;
+    top: 20px;
+    right: 30%;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    background: -webkit-linear-gradient(right bottom, #faffd6, #9fa34c);
+    background: linear-gradient(to left top, #faffd6, #9fa34c);
+    opacity: 0.3;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    box-shadow: #000 -5px 5px 20px;
+  }
 
-     &__txt {
-       text-align: right;
-     }
+  &__video {
+    margin: 0 auto;
+    position: relative;
+    background: url("../img/videobg.jpg") top center fixed;
+    background-size: cover;
 
-   }
-   &__biography::before {
-     content: "";
-     background: rgba(0, 0, 0, 0.3) fixed;
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background-size: cover;
-   }
-   &__biography__shape {
-     position: absolute;
-     bottom: -200px;
-     right: -100px;
-     width: 1200px;
-     height: 300px;
-     z-index: 0;
-     background: -webkit-linear-gradient(right bottom, #41bfb5, #ac9da1);
-     background: linear-gradient(to left top, #41bfb5, #ac9da1);
-     opacity: 0.5;
-     -webkit-transform: rotate(-10deg);
-     transform: rotate(-10deg);
-     box-shadow: #000 5px -5px 20px;
-   }
+    &__content {
+      max-width: 1200px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-   &__paint {
-     background: url("../img/paint-ston.JPG") center;
-     background-size: auto 100%;
-     position: relative;
-     min-height: 400px;
-     height: auto;
-     z-index: 1;
-     &__txt {
-       text-align: left;
-     }
+    &__frame {
+      width: 350px;
+      height: 170px;
+      display: inline-block;
+      margin: 25px 30px 25px;
+      position: relative;
+      z-index: 5;
+      box-shadow: #000 0 5px 15px;
+    }
+    &__txt {
+      top: 20%;
+    }
+  }
+  &__video::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3) fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 
-   }
-   &__paint::before {
-     content: "";
-     background: rgba(0, 0, 0, 0.5);
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background-size: cover;
-   }
-   &__paint__shape {
-     position: absolute;
-     top: 20px;
-     right: 30%;
-     width: 500px;
-     height: 400px;
-     z-index: 1;
-     background: -webkit-linear-gradient(right bottom, #faffd6, #9fa34c);
-     background: linear-gradient(to left top, #faffd6, #9fa34c);
-     opacity: 0.3;
-     -webkit-transform: rotate(20deg);
-     transform: rotate(20deg);
-     box-shadow: #000 -5px 5px 20px;
-   }
+  }
+  &__video__shape {
+    position: absolute;
+    top: 0;
+    left: -500px;
+    width: 700px;
+    height: 550px;
+    z-index: 0;
+    overflow: hidden;
+    background: -webkit-linear-gradient(right bottom, #bf0301, #823a3a);
+    background: linear-gradient(to left top, #bf0301, #823a3a);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    box-shadow: #000 5px -5px 20px;
 
-   &__video {
-     margin: 0 auto;
-     position: relative;
-     background: url("../img/videobg.jpg") top center fixed;
-     background-size: cover;
-
-     &__content {
-       max-width: 1200px;
-       display: block;
-       margin: 0 auto;
-       text-align: center;
-     }
-
-     &__frame {
-       width: 350px;
-       height: 170px;
-       display: inline-block;
-       margin: 25px 30px 25px;
-       position: relative;
-       z-index: 5;
-       box-shadow: #000 0 5px 15px;
-     }
-     &__txt {
-       top: 20%;
-     }
-   }
-   &__video::before {
-     content: "";
-     background: rgba(0, 0, 0, 0.3) fixed;
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background-size: cover;
-
-   }
-   &__video__shape {
-     position: absolute;
-     top: 0;
-     left: -500px;
-     width: 700px;
-     height: 550px;
-     z-index: 0;
-     overflow: hidden;
-     background: -webkit-linear-gradient(right bottom, #bf0301, #823a3a);
-     background: linear-gradient(to left top, #bf0301, #823a3a);
-     -webkit-transform: rotate(20deg);
-     transform: rotate(20deg);
-     box-shadow: #000 5px -5px 20px;
-
-   }
-   &__slider {
-     background: -webkit-linear-gradient(right bottom, rgba(147, 151, 126, 0.98), rgba(18, 18, 18, 1));
-     background: linear-gradient(to left top, rgba(147, 151, 126, 0.98), rgba(18, 18, 18, 1));
-     background-size: 100% auto;
-     position: relative;
-     max-height: 100%;
-     min-height: 0 !important;
-     z-index: 10;
-     display: block;
-     margin: 0 auto;
-     overflow: hidden;
-     &__img {
-       z-index: 3;
-       margin: 0 auto;
-       outline: none;
-       -webkit-filter: drop-shadow(#000 0 0 30px) !important;
-       filter: drop-shadow(#000 0 0 30px) !important;
-     }
-
-   }
-
- }
+  }
+  &__slider {
+    background: -webkit-linear-gradient(right bottom, rgba(147, 151, 126, 0.98), rgba(18, 18, 18, 1));
+    background: linear-gradient(to left top, rgba(147, 151, 126, 0.98), rgba(18, 18, 18, 1));
+    background-size: 100% auto;
+    position: relative;
+    max-height: 100%;
+    min-height: 0 !important;
+    z-index: 10;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    &__img {
+      z-index: 3;
+      margin: 0 auto;
+      outline: none;
+      -webkit-filter: drop-shadow(#000 0 0 30px) !important;
+      filter: drop-shadow(#000 0 0 30px) !important;
+    }
+  }
+}
+.home__footer{
+  background: #121212!important
+}
 
 //gallery
 
@@ -443,7 +352,7 @@ body, html {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -587,7 +496,7 @@ body, html {
 //contact
 .body--contact::before {
   content: "";
-  background: url("../img/Contact_inter.jpg");
+  background: url("../img/banner01.jpg");
   background-size: cover;
   position: fixed;
   top: 0;
@@ -608,12 +517,16 @@ body, html {
 }
 
 .page__wrap--contact {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 50px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0 auto 50px;
+  align-content: center;
+  padding: 0 20px;
   position: relative;
   z-index: 10;
+
 }
 
 .contact {
@@ -622,38 +535,42 @@ body, html {
     text-transform: capitalize;
     margin: 50px auto;
     width: 100%;
+    position: relative;
     color: #fff;
     font: 45px 'Titillium Web', sans-serif;
     text-shadow: #000 3px 2px 3px;
     z-index: 999;
   }
-  &__form {
-    width: 400px;
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
 
-    &__input {
-      width: 100%;
-      height: 40px;
-      margin-bottom: 30px;
-      border: 0;
-      outline: none;
+
+  &__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: #000 3px 2px 3px;
+    &__item {
       border-radius: 10px;
-      color: #fff;
-      font-size: 16px;
-      padding: 0 10px;
+      padding: 5px 10px;
+      margin-bottom: 20px;
       background-color: rgba(201, 210, 225, 0.3);
-      &--txt {
-        height: 100px;
-      }
-      &--btn {
-        width: 200px;
-        font-size: 22px;
+      &__icon{
+        padding: 0 15px 0 5px;
       }
     }
+
   }
+
+
   &__map {
     width: 400px;
     border-radius: 10px;
@@ -665,28 +582,6 @@ body, html {
     background-color: rgba(201, 210, 225, 0.3);
   }
 
-  &__article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 20px 0;
-    text-shadow: #000 3px 2px 3px;
-    &__item {
-      border-radius: 10px;
-      padding: 5px 10px;
-      background-color: rgba(201, 210, 225, 0.3);
-    }
-  }
 }
 
 //slick\
@@ -759,13 +654,14 @@ li.slick-active button:before {
     }
   }
 }
+
 //generates fonts using http://transfonter.org/
 
 @media (max-width: 1366px) {
 }
 
 @media (min-width: 1200px) {
-  .header__banner__title{
+  .header__banner__title {
     padding: 0 50px;
   }
 

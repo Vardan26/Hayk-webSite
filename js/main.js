@@ -88,12 +88,6 @@ $(window).scroll(function () {
     $("#header__banner__title").css({
         "transform": "translate(0px, " + wScroll / 4 + "%)"
     });
-    $(".header__shape--top").css({
-        "transform": "translate(0px, -" + wScroll / 6 + "%)rotate(-10deg)"
-    });
-    $(".header__shape--bottom").css({
-        "transform": "translate(0px, " + wScroll / 30 + "%)rotate(8deg)"
-    });
 
     $(".section__biography__shape").css({
         "transform": "translate(0px, -" + wScroll / 30 + "%)rotate(-8deg)"
@@ -122,6 +116,9 @@ lightGallery(document.getElementById('lightgallery--drawing'));
 
 
 
+
+
+//contact form
 // map
 function initMap() {
     // Create a map object and specify the DOM element for display.
