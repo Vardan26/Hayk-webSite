@@ -57,10 +57,6 @@ $(function () {
         $(".gallery__category__type").addClass("hide");
         $(".gallery__category__barelefs").removeClass("hide");
     });
-    $(".gallery__list__item--drawing").on('click', function () {
-        $(".gallery__category__type").addClass("hide");
-        $(".gallery__category__drawings").removeClass("hide");
-    });
 
     $(".gallery__list__item").each(function (i) {
         setTimeout(function () {
