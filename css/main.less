@@ -126,6 +126,7 @@ body, html {
     top: 40%;
     left: 50%;
     width: 100%;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
     font-size: 65px;
     font-weight: lighter;
@@ -206,11 +207,12 @@ body, html {
     width: 1200px;
     height: 300px;
     z-index: 0;
-    background: -webkit-linear-gradient(right bottom, #41bfb5, #ac9da1);
+    background: -webkit-gradient(linear, right bottom, left top, from(#41bfb5), to(#ac9da1));
     background: linear-gradient(to left top, #41bfb5, #ac9da1);
     opacity: 0.5;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
+    -webkit-box-shadow: #000 5px -5px 20px;
     box-shadow: #000 5px -5px 20px;
   }
 
@@ -241,11 +243,12 @@ body, html {
     width: 500px;
     height: 400px;
     z-index: 1;
-    background: -webkit-linear-gradient(right bottom, #faffd6, #9fa34c);
+    background: -webkit-gradient(linear, right bottom, left top, from(#faffd6), to(#9fa34c));
     background: linear-gradient(to left top, #faffd6, #9fa34c);
     opacity: 0.3;
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
+    -webkit-box-shadow: #000 -5px 5px 20px;
     box-shadow: #000 -5px 5px 20px;
   }
 
@@ -269,6 +272,7 @@ body, html {
       margin: 25px 30px 25px;
       position: relative;
       z-index: 5;
+      -webkit-box-shadow: #000 0 5px 15px;
       box-shadow: #000 0 5px 15px;
     }
     &__txt {
@@ -292,15 +296,16 @@ body, html {
     height: 550px;
     z-index: 0;
     overflow: hidden;
-    background: -webkit-linear-gradient(right bottom, #bf0301, #823a3a);
+    background: -webkit-gradient(linear, right bottom, left top, from(#bf0301), to(#823a3a));
     background: linear-gradient(to left top, #bf0301, #823a3a);
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
+    -webkit-box-shadow: #000 5px -5px 20px;
     box-shadow: #000 5px -5px 20px;
 
   }
   &__slider {
-    background: -webkit-linear-gradient(right bottom, rgba(147, 151, 126, 0.98), rgba(18, 18, 18, 1));
+    background: -webkit-gradient(linear, right bottom, left top, from(rgba(147, 151, 126, 0.98)), to(rgba(18, 18, 18, 1)));
     background: linear-gradient(to left top, rgba(147, 151, 126, 0.98), rgba(18, 18, 18, 1));
     background-size: 100% auto;
     position: relative;
@@ -327,7 +332,6 @@ body, html {
 
 .gallery {
   &__banner {
-    background: -webkit-radial-gradient(#fff, #494b54);
     background: radial-gradient(#fff, #494b54);
     background-size: 100% 100%;
     position: fixed;
@@ -431,6 +435,7 @@ body, html {
     background: rgba(12, 15, 11, 0.82);
     margin: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 5px 5px 10px #000;
     box-shadow: 5px 5px 10px #000;
     -webkit-transition: 1s;
     transition: 1s;
@@ -517,11 +522,18 @@ body, html {
 }
 
 .page__wrap--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 0 auto 50px;
+  -ms-flex-line-pack: center;
   align-content: center;
   padding: 0 20px;
   position: relative;
@@ -686,9 +698,6 @@ li.slick-active button:before {
     width: 300px;
   }
 
-  .header__shape--top {
-    top: -250px;
-  }
 
   .home__article__title {
     font-size: 60px;
@@ -793,12 +802,7 @@ li.slick-active button:before {
         margin: 0;
       }
     }
-    &__shape--top {
-      bottom: 70%;
-    }
-    &__shape--bottom {
-      top: 80%;
-    }
+
     &__banner__title {
       font-size: 40px;
       line-height: 45px;
@@ -851,9 +855,6 @@ li.slick-active button:before {
   .home__article__title {
     font-size: 50px;
   }
-}
-
-@media (max-width: 320px) {
 }
 
 
