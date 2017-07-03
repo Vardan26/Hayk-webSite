@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="body">
+
+<header class="header">
+    <div class="container header__top">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.png" class="header__logo__img">
+        </a>
+        <ul class="header__top__list">
+            <li>
+                <div class="header__search">
+                    <input class="header__search__input" type="search">
+                    <i class="fa fa-search header__search__scope" aria-hidden="true"></i>
+                    <i class="fa fa-times header__search__close" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li>
+                <i class="fa fa-user header__prof" aria-hidden="true"></i>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart header__shop" aria-hidden="true"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <nav class="container header__nav">
+        <i class="fa fa-bars header__burger " aria-hidden="true"></i>
+        <i class="fa fa-times header__nav__close hidden" aria-hidden="true"></i>
+        <ul class="nav__menu header__nav__menu">
+            <li class="nav__menu__item header__nav__menu__item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav__menu__item header__nav__menu__item">
+                <a href="about.html">About us</a>
+            </li>
+            <li class="nav__menu__item header__nav__menu__item">
+                <a href="product.html">Shop</a>
+            </li>
+            <li class="nav__menu__item header__nav__menu__item">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main contacts__main">
+    <section class="intro intro--contact">
+    </section>
+    <section class="container contacts__info">
+        <div class="contacts__info__img">
+            <img src="img/Layer%201.png">
+        </div>
+        <ul class="contacts__info__list">
+            <li class="contacts__info__list__item">
+                <i class="fa fa-mobile contacts__info__icon" aria-hidden="true"></i>
+                <a href="callto:+123 456 789" class="contacts__info__txt">Call us today: +123 456 789</a>
+                <span class="contacts__info__subTxt">We are equipped to make any place shine!</span>
+            </li>
+            <li class="contacts__info__list__item">
+                <i class="fa fa-map-marker contacts__info__icon" aria-hidden="true"></i>
+                <h3 class="contacts__info__txt">
+                    28 JACKSON BLVD STE 1020<br>
+                    CHICAGO<br>
+                    IL 60604-2340
+                </h3>
+            </li>
+            <li class="contacts__info__list__item">
+                <i class="fa fa-envelope-o contacts__info__icon" aria-hidden="true"></i>
+                <a href="mailto:yourmail@domain.com" class="contacts__info__txt">yourmail@domain.com</a>
+            </li>
+        </ul>
+    </section>
+    <h2 class="container contacts__title">get in touch with us</h2>
+    <section class="container contacts__forMap">
+        <form class="contacts__form">
+            <input type="text" class="contacts__form__input" placeholder="name">
+            <input type="email" class="contacts__form__input" placeholder="email">
+            <textarea class="contacts__form__input" placeholder="message"></textarea>
+            <button class="contacts__form__input--btn">send</button>
+        </form>
+        <div class="contacts__map" id="map">
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__intro">
+        <ul class="footer__intro__icons">
+            <li class="footer__intro__icons__item footer__intro__icons__item--fb">
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer__intro__icons__item footer__intro__icons__item--tweet">
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer__intro__icons__item footer__intro__icons__item--insta">
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer__intro__icons__item footer__intro__icons__item--pin">
+                <a href="#">
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="footer__intro__icons__item footer__intro__icons__item--gPlus">
+                <a href="#">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="footer__logo">
+            <img src="img/logo.png" class="footer__logo__img">
+        </a>
+    </div>
+    <nav class="footer__nav">
+        <ul class="nav__menu footer__nav__menu">
+            <li class="nav__menu__item footer__nav__menu__item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav__menu__item footer__nav__menu__item">
+                <a href="about.html">About us</a>
+            </li>
+            <li class="nav__menu__item footer__nav__menu__item">
+                <a href="product.html">Shop</a>
+            </li>
+            <li class="nav__menu__item footer__nav__menu__item">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="slick/slick.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
