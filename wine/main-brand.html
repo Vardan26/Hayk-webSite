@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="body">
+
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <span class="header__contact">
+            contact us 24/7:
+                <a href="tel:+000612 0245 000" class="header__contact__tel">+000612 0245 000</a>
+            </span>
+            <h4 class="header__cn">cn</h4>
+        </div>
+
+    </div>
+    <nav class="container header__nav">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.png">
+        </a>
+        <i class="fa fa-bars header__burger " aria-hidden="true"></i>
+        <ul class="header__menu">
+            <li class="header__menu__item">
+                <a href="main-product.html">
+                    create my wine
+                </a>
+            </li>
+            <li class="header__menu__item">
+                <a href="main-brand.html">
+                    create my brand
+                </a>
+            </li>
+        </ul>
+        <ul class="header__icons">
+            <li class="header__icons__item">
+                <a href="account.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="header__icons__item">
+                <a href="order01.html">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="header__icons__item">
+                <div class="header__search">
+                    <input class="header__search__input" type="search">
+                    <i class="fa fa-search header__search__scope" aria-hidden="true"></i>
+                    <i class="fa fa-times header__search__close" aria-hidden="true"></i>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+<main class="main main__brand">
+    <h2 class="order__title">create my brand</h2>
+
+    <div class="container brandQuantity">
+        <div class="brandQuantity__cta">
+            <a href="#" class="brandQuantity__cta__item">Use our selection</a>
+            <a href="#" class="brandQuantity__cta__item">create your wine</a>
+        </div>
+        <form class="brandQuantity__form">
+            <label class="brandQuantity__label">
+                        <span class="brandQuantity__span">
+                        how many reference?
+                        </span>
+                <input type="number" min="0" value="3" max="5"
+                       class="brandQuantity__input">
+                <button type="button" class="brandQuantity__btn order__btn">
+                    ok
+                </button>
+            </label>
+        </form>
+        <div class="brandQuantity__bottles">
+
+        </div>
+
+    </div>
+    <section class="createWine">
+        <div class="container">
+            <div class="bottle">
+                <form class="bottle__form">
+                    <p class="bottle__txt">
+                        Et si digesto plene consilio
+                        id placuerit fieri, is
+                        adhibetur qui pro domibu 
+                        aurigarum aut artem
+                        tesserariam profitetur
+                        aut secretiora .
+                    </p>
+
+
+                    <div>
+                        <label class="slider__name" for="a-1">full bodied</label>
+                        <div id="s-1" class="slider" data-value="0" data-input="a-1"
+                             data-bottle=".bottle__fill--bodied"></div>
+                        <input type="text" class="slider-input" id="a-1" readonly>%
+                    </div>
+                    <div>
+                        <label class="slider__name" for="a-2">sweet</label>
+                        <div id="s-2" class="slider" data-value="0" data-input="a-2"
+                             data-bottle=".bottle__fill--fruit"></div>
+                        <input type="text" class="slider-input" id="a-2" readonly>%
+
+                    </div>
+
+
+                    <div>
+                        <label class="slider__name" for="a-3">fruit</label>
+                        <div id="s-3" class="slider" data-value="0" data-input="a-3"
+                             data-bottle=".bottle__fill--sweet"></div>
+                        <input type="text" class="slider-input" id="a-3" readonly>%
+
+                    </div>
+                </form>
+                <div class="bottle__img">
+                    <img src="img/BottleBrand.png">
+                    <div class="bottle__fill bottle__fill--sweet"></div>
+                    <div class="bottle__fill bottle__fill--fruit"></div>
+                    <div class="bottle__fill bottle__fill--fool"></div>
+                </div>
+            </div>
+            <div class="style">
+                <h3 class="order__title">style of my wine</h3>
+                <div class="style__graphic">
+                    <div class="style__graphic__img">
+                        <span class="style__graphic__type">
+                            fruit
+                        </span>
+                        <span class="style__graphic__type">
+                            tannins
+                        </span>
+                        <span class="style__graphic__type">
+                            sweetness
+                        </span>
+                        <span class="style__graphic__type">
+                            alcohol
+                        </span>
+                        <img src="img/wine_style%204.png">
+                        <svg height="100%" width="100%" class="svg-graph" style="position: absolute">
+                            <polygon points="90,100 100,90  110,100 100, 110"
+                                     style="fill:#561a1e;stroke:#000;stroke-width:1"/>
+                        </svg>
+
+
+                    </div>
+                    <ul class="style__graphic__list">
+                        <li class="style__graphic__list__item">
+                            my wine
+                        </li>
+                        <li class="style__graphic__list__item">
+                            compared wine
+                        </li>
+                    </ul>
+                </div>
+                <form class="style__compare">
+                    <h3 class="order__title">compare my wine with</h3>
+                    <label class="style__compare__label">
+                        chateau lafitte
+                    </label>
+                    <button class="style__compare__btn">
+                        ok
+                    </button>
+                </form>
+            </div>
+        </div>
+        <a href="order01.html" type="submit" class="order__btn placeOrder__order__btn">ok, this is a perfect</a>
+
+    </section>
+    <section class="createLabel">
+        <h2 class="order__title">create your label</h2>
+        <div class="container">
+            <div class="sticker">
+                <h2 class="order__title sticker__title">choose your sticker</h2>
+                <ul class="sticker__list">
+                    <li class="sticker__item">
+                        <img src="img/label1.png" alt="" class="sticker__item__img">
+                    </li>
+                    <li class="sticker__item">
+                        <img src="img/label2.png" alt="" class="sticker__item__img">
+                    </li>
+                    <li class="sticker__item">
+                        <img src="img/label3.png" alt="" class="sticker__item__img">
+                    </li>
+                    <li class="sticker__item">
+                        <img src="img/label4.png" alt="" class="sticker__item__img">
+                    </li>
+                </ul>
+            </div>
+            <div class="selected">
+                <h2 class="order__title sticker__title">insert your text here</h2>
+                <div class="selected__img">
+                    <img class="selected__img__item" src="">
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="label__btn" class="order__btn">ok</button>
+    </section>
+    <section class="placeOrder">
+        <h2 class="order__title">place your order</h2>
+        <div class="container">
+            <div class="placeOrder__bottle">
+                <img class="placeOrder__bottle__img" src="img/bottleOrder.png">
+                <img class="placeOrder__bottle__label" src="">
+            </div>
+            <article class="placeOrder__article">
+                <h3 class="order__title">congratulations !</h3>
+                <div class="placeOrder__testimonial">
+                    <div class="placeOrder__testimonial__img">
+                        <img src="img/testimonial.jpg">
+                    </div>
+                    <p class="placeOrder__testimonial__txt">
+                        Comments of our wine expert about your wine :
+                        Altera sententia est, quae definit amicitiam
+                        paribus officiis ac voluntatibus.
+                        Hoc quidem est nimis exigue
+                        et exiliter ad calculos vocare
+                    </p>
+                </div>
+                <form class="placeOrder__form">
+                    <p class="placeOrder__form__txt">
+                        You just created your own wine !<br>
+                        Select your quantity and receive
+                        your wine instantly !
+                    </p>
+                    <label class="placeOrder__form__label">
+                        <span class="placeOrder__form__span">
+                        quantity
+                        </span>
+                        <input type="number" class="placeOrder__form__input">
+                        <button type="button" class="order__btn">
+                            ok
+                        </button>
+                    </label>
+                    <label class="placeOrder__form__label">
+                        <span class="placeOrder__form__span">
+                            name of your wine
+                        </span>
+                        <input type="text" class="placeOrder__form__input">
+                        <button type="button" class="order__btn">
+                            ok
+                        </button>
+                    </label>
+                    <a href="#" class="placeOrder__form__link">
+                        change the blank
+                    </a>
+                    <a href="#" class="placeOrder__form__link">
+                        change the label
+                    </a>
+                </form>
+            </article>
+            <article class="placeOrder__feels">
+                <h3 class="order__title">what your feels first</h3>
+                <ul class="placeOrder__feels__list">
+                    <li class="placeOrder__feels__item">
+                        <span class="placeOrder__feels__number">
+                            1
+                        </span>
+                        <p class="placeOrder__feels__txt">
+                            Comments of our wine expert about your wine :
+                            Altera sententia est, quae definit amicitiam
+                            paribus officiis ac voluntatibus.
+                            Hoc quidem est nimis exigue
+                            et exiliter ad calculos vocare
+                        </p>
+                    </li>
+                    <li class="placeOrder__feels__item">
+                        <span class="placeOrder__feels__number">
+                            2
+                        </span>
+                        <p class="placeOrder__feels__txt">
+                            Comments of our wine expert about your wine :
+                            Altera sententia est, quae definit amicitiam
+                            paribus officiis ac voluntatibus.
+                            Hoc quidem est nimis exigue
+                            et exiliter ad calculos vocare
+                        </p>
+                    </li>
+                    <li class="placeOrder__feels__item">
+                        <span class="placeOrder__feels__number">
+                            3
+                        </span>
+                        <p class="placeOrder__feels__txt">
+                            Comments of our wine expert about your wine :
+                            Altera sententia est, quae definit amicitiam
+                            paribus officiis ac voluntatibus.
+                            Hoc quidem est nimis exigue
+                            et exiliter ad calculos vocare
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <a href="order01.html" type="submit" class="order__btn placeOrder__order__btn">ok, this is a perfect</a>
+
+    </section>
+</main>
+
+<footer class=" footer">
+    <ul class="container footer__menu">
+        <li class="footer__item">
+            <a href="">
+                faq
+            </a>
+        </li>
+        <li class="footer__item">
+            <a href="">
+                about us
+            </a>
+        </li>
+        <li class="footer__item">
+            <a href="">
+                contact us
+            </a>
+        </li>
+        <li class="footer__item">
+            <a href="">
+                press
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
