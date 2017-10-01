@@ -160,10 +160,23 @@ $roboto: 'Roboto', sans-serif;
 }
 
 .header {
-  margin: 15px auto;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0);
+  padding: 15px 0;
+  transition: .3s;
+
+  .container{
+    align-items: center;
+  }
   &__logo {
-    max-width: 160px;
+    max-width: 100px;
+    width: 100%;
+    transition: .3s;
+    img{
+      width: 100%;
+    }
   }
   &__burger {
     color: #a1a1a1;
@@ -184,24 +197,39 @@ $roboto: 'Roboto', sans-serif;
       &__item {
         font-family: $metropolis;
         margin-right: 30px;
-        color: #000;
+        color: #fff;
         text-transform: capitalize;
         font-size: 20px;
-        &:active,
+        transition: .3s;
+        &--active,
         &:hover {
-          color: $lightGray;
+          color: #ccbdce;
         }
       }
     }
   }
+  &__scroll{
+    background: #fff;
+    .header__logo{
+      max-width: 50px;
+    }
+    .header__nav__menu__item{
+      color: #000;
+      &--active,
+      &:hover {
+        color: $lightGray;
+      }
+    }
+  }
 }
+
 
 .intro {
   position: relative;
   overflow: hidden;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 100vh;
   background: url("../img/headerBanner.jpg") center;
   background-size: cover;
   &:before {
@@ -211,7 +239,7 @@ $roboto: 'Roboto', sans-serif;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
   }
   &__title,
   &__subTitle,
@@ -226,56 +254,56 @@ $roboto: 'Roboto', sans-serif;
     display: block;
   }
   &__title {
-    margin: calc(100vh * .2) auto 0;
+    margin: calc(100vh * .4) auto 0;
     font-size: calc(50px + 1vw);
   }
   &__subTitle {
     font-size: 28px;
-    font-weight: lighter;
+    font-weight: bold;
     margin: 25px auto;
   }
-  &__more {
-    font-size: 18px;
-    max-width: 150px;
-    margin: 0 auto;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.51);
-  }
+  //&__more {
+  //  font-size: 18px;
+  //  max-width: 150px;
+  //  margin: 0 auto;
+  //  padding: 5px 10px;
+  //  text-transform: uppercase;
+  //  background: rgba(0, 0, 0, 0.51);
+  //}
 }
 
-.notes {
-  font-family: $metropolis;
-  display: flex;
-  position: absolute;
-  top: 100%;
-  transform: translateY(-100%);
-  &__item {
-    max-width: 33%;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-    background: no-repeat;
-    color: #fff;
-    padding: 40px;
-    &:nth-child(1n) {
-      background: url("../img/bg-note2.jpg");
-    }
-    &:nth-child(2) {
-      background: url("../img/bg-note3.jpg");
-    }
-  }
-  &__title {
-    font-family: $metropolis;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  &__txt {
-    font-weight: lighter;
-    font-size: 20px;
-  }
-}
+//.notes {
+//  font-family: $metropolis;
+//  display: flex;
+//  position: absolute;
+//  top: 100%;
+//  transform: translateY(-100%);
+//  &__item {
+//    max-width: 34%;
+//    width: 100%;
+//    text-align: center;
+//    background-size: cover;
+//    background: no-repeat;
+//    color: #fff;
+//    padding: 40px;
+//    &:nth-child(1n) {
+//      background: url("../img/bg-note2.jpg");
+//    }
+//    &:nth-child(2) {
+//      background: url("../img/bg-note3.jpg");
+//    }
+//  }
+//  &__title {
+//    font-family: $metropolis;
+//    font-size: 25px;
+//    text-transform: uppercase;
+//    margin-bottom: 20px;
+//  }
+//  &__txt {
+//    font-weight: lighter;
+//    font-size: 20px;
+//  }
+//}
 
 .welcome {
   margin: 100px auto;
@@ -295,7 +323,7 @@ $roboto: 'Roboto', sans-serif;
     font-weight: lighter;
     span {
       color: $lightGray;
-
+      font-weight: 700;
     }
   }
   &__txt {
@@ -342,9 +370,9 @@ $roboto: 'Roboto', sans-serif;
     position: absolute;
     top: 0;
     left: 0;
-    font-weight: bolder;
+    font-weight: 900;
     color: $lightGray;
-    font-size: 40px;
+    font-size: 46px;
     background: #fff;
     padding: 0 10px;
     transform: translate(-1px, -50%);
@@ -388,7 +416,7 @@ $roboto: 'Roboto', sans-serif;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 0;
   }
   &__title {
@@ -513,7 +541,7 @@ $roboto: 'Roboto', sans-serif;
   &__banner {
     width: 50%;
     box-sizing: border-box;
-    background: url("../img/aboutBanner.jpg") no-repeat;
+    background: url("../img/aboutBanner.jpg") no-repeat center;
     background-size: cover;
     position: relative;
     img {
@@ -675,7 +703,7 @@ $roboto: 'Roboto', sans-serif;
     color: #fff;
     padding: 100px 0;
     &__menu {
-      max-width: 450px;
+      max-width: 350px;
     }
     &__title{
       font-weight: bold;
@@ -692,6 +720,7 @@ $roboto: 'Roboto', sans-serif;
     &__txt{
       margin: 15px 0;
       font-size: 18px;
+      font-family: $metropolis;
     }
   }
   &__form{
@@ -721,7 +750,7 @@ $roboto: 'Roboto', sans-serif;
 
 @media (max-width: 1600px) {
   .container {
-    padding: 0 calc(10px + 2vw);
+    padding: 15px calc(10px + 2vw);
   }
 }
 
@@ -739,6 +768,7 @@ $roboto: 'Roboto', sans-serif;
   }
   .intro{
     height: 100%;
+    padding-top: 60px;
     .notes{
       position: relative;
       transform: translate(0);
@@ -750,7 +780,7 @@ $roboto: 'Roboto', sans-serif;
     }
   }
   .about__banner{
-    min-height: 200px;
+    min-height: 300px;
     img{
       right: 0;
       top: 0;
@@ -770,7 +800,10 @@ $roboto: 'Roboto', sans-serif;
     justify-content: space-around;
   }
   .header {
-    flex-direction: column;
+    position: absolute;
+    .container{
+      flex-direction: column;
+    }
     &__burger {
       display: inline-block !important;
       margin: 10px auto;
@@ -784,7 +817,6 @@ $roboto: 'Roboto', sans-serif;
         padding: 10px;
         text-align: center;
         width: auto;
-        background-color: rgba(255, 255, 255, 0.3);
         height: 0;
         opacity: 0;
         transition: 0.5s;
@@ -795,11 +827,20 @@ $roboto: 'Roboto', sans-serif;
           margin: 3px 0;
         }
       }
-      &__mobile {
+
+    }
+    &__mobile {
+     background: #fff;
+      .header__nav__menu{
         display: block !important;
         height: 100% !important;
         opacity: 1 !important;
-
+        &__item{
+          color: #000;
+        }
+        .header__logo img{
+          max-width: 80px;
+        }
       }
     }
   }
@@ -809,12 +850,11 @@ $roboto: 'Roboto', sans-serif;
     &__banner,
     &__article {
       max-width: 100%;
-      margin: 20px 0;
+      margin: 0 auto!important;
       padding:  20px;
     }
 
   }
-
 }
 
 

@@ -1,0 +1,10 @@
+
+@font-face {
+	font-family: 'RabbitEars';
+	src: url('RabbitEars.eot');
+	src: url('RabbitEars.eot?#iefix') format('embedded-opentype'),
+		url('RabbitEars.woff') format('woff'),
+		url('RabbitEars.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
