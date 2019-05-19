@@ -1,0 +1,466 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body class="body">
+<header class="header">
+    <div class="container">
+        <ul class="header__list">
+            <li class="header__list__item header__list__item--title">
+                <i class="header__list__item__icon i-nav-dashboard"></i>
+                <span class="section__txt">
+                    dashboard
+                </span>
+            </li>
+            <li class="header__list__item header__list__item--date">
+             <span class="section__txt">
+                 November 17
+             </span>
+            </li>
+        </ul>
+        <div class="header__list">
+            <div class="header__user">
+                <span class="section__txt">
+                    JOHAN RONANSSON
+                </span>
+                <span class="header__user__icon ">
+                    jr
+                </span>
+                <span class="header__user__logOut">
+                    <!-- click add className 'header__user__logOut--active' -->
+                    Log out
+                </span>
+
+            </div>
+            <span class="header__notification">
+                <i class="header__list__item__icon i-notifications"></i>
+            </span>
+        </div>
+    </div>
+</header>
+
+<nav class="siteNav ">
+    <a href="#" class="siteNav__logo">
+        <img src="../src/assets/images/icons/logo.svg" alt="ottomatik" class="siteNav__logo__img">
+    </a>
+    <div>
+        <span class="siteNav__pin">
+            <i class="fa fa-thumb-tack"></i>
+        </span>
+        <ul class="siteNav__menu  ">
+            <li class="siteNav__item siteNav__item--big">
+                <i class="siteNav__item__icon i-admin"></i>
+                <span class="siteNav__item__txt">Admin</span>
+                <i class="siteNav__item__icon i-chevron-down"></i>
+            </li>
+            <li>
+                <a href="admin-customer.html" class="siteNav__item ">
+                    <i class="siteNav__item__icon i-nav-admin-customers"></i>
+                    <span class="siteNav__item__txt">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-user.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-nav-admin-users"></i>
+                    <span class="siteNav__item__txt">Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-plans.html" class="siteNav__item ">
+                    <i class="siteNav__item__icon i-nav-admin-plans"></i>
+                    <span class="siteNav__item__txt">Plans</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-ref.html" class="siteNav__item ">
+                    <i class="siteNav__item__icon i-nav-admin-referrals"></i>
+                    <span class="siteNav__item__txt">Referrals</span>
+                </a>
+            </li>
+            <li>
+                <a class='siteNav__item' href="admin-backup-history.html">
+                    <i class="siteNav__item__icon i-calendar"></i>
+                    <span class="siteNav__item__txt">Job history</span>
+                </a>
+            </li>
+            <li>
+                <a class='siteNav__item' href="admin-conductors.html">
+                    <i class="siteNav__item__icon i-nav-admin-conductors"></i>
+                    <span class="siteNav__item__txt">Conductors</span>
+                </a>
+            </li>
+            <li>
+                <a class='siteNav__item' href="admin-announcements.html">
+                    <i class="siteNav__item__icon i-nav-admin-announcements"></i>
+                    <span class="siteNav__item__txt">Announcements</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="siteNav__menu siteNav__menu--open">
+            <li class="siteNav__item siteNav__item--big">
+                <i class="siteNav__item__icon i-user"></i>
+                <span class="siteNav__item__txt">User</span>
+                <i class="siteNav__item__icon i-chevron-down"></i>
+            </li>
+            <li class="siteNav__item siteNav__item--active">
+                <a href="index.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-nav-dashboard"></i>
+                    <span class="siteNav__item__txt">Dashboard</span>
+                </a>
+            </li>
+            <li class="siteNav__item">
+                <a href="history.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-calendar"></i>
+                    <span class="siteNav__item__txt">History</span>
+                </a>
+            </li>
+            <li class="siteNav__item">
+                <a href="jobs.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-nav-jobs"></i>
+                    <span class="siteNav__item__txt">Jobs</span>
+                </a>
+            </li>
+            <li class="siteNav__item">
+                <a href="db.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-database"></i>
+                    <span class="siteNav__item__txt">Databases</span>
+                </a>
+            </li>
+            <li class="siteNav__item">
+                <a href="server.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-nav-servers"></i>
+                    <span class="siteNav__item__txt">Servers</span>
+                </a>
+            </li>
+            <li class="siteNav__item">
+                <a href="storage.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-nav-storage"></i>
+                    <span class="siteNav__item__txt">Storage</span>
+                </a>
+            </li>
+            <li class="siteNav__item">
+                <a href="users.html" class="siteNav__item">
+                    <i class="siteNav__item__icon i-nav-user"></i>
+                    <span class="siteNav__item__txt">Account</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="siteNav__item siteNav__settings">
+        <i class="siteNav__item__icon i-nav-settings"></i>
+        <span class="siteNav__item__txt">Settings</span>
+    </div>
+    <div class="siteNav__trial section__txt">
+        14 trial days left
+    </div>
+    <i class="siteNav__openArrow fa fa-chevron-right"></i>
+</nav>
+
+<main class="main jobsBinlog ">
+    <div class="container ">
+         <span class="backTo-link">
+            <i class="fa fa-chevron-left"></i>
+            <span class="backTo-link__txt">
+                back to History
+            </span>
+        </span>
+        <div class="space-between section__head jobsBinlog__head">
+            <h2 class="section__title">
+                MySQL Backup History Record:
+                <span class="section__head__blue">otto-hourly-test-job</span>
+                <span class="jobsBinlog__head__desc section__txt">This is a description of the job.</span>
+            </h2>
+            <div>
+                <span class="btn-sec">
+                    delete
+                </span>
+                <span class="btn-prim">edit</span>
+                <span class="btn-prim">run now</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jobsBinlog__row row">
+                <section class="section jobsBinlog__row__section section--details">
+                    <span class="jobs__section__title section__txt">
+                        job details
+                    </span>
+                    <div>
+                        <label class="section__label">
+                            <span class="section__label__name">Name</span>
+                            <span class="section__label__val">backupname123</span>
+                        </label>
+                        <label class="section__label">
+                            <span class="section__label__name">Storage</span>
+                            <span class="section__label__val">ottomatic-storage</span>
+                        </label>
+                        <label class="section__label">
+                            <span class="section__label__name">Storage Folder</span>
+                            <span class="section__label__val italic">None</span>
+                        </label>
+                    </div>
+                </section>
+                <section class="section jobsBinlog__row__section">
+                    <span class="jobs__section__title section__txt">
+                        Connection
+                    </span>
+                    <div>
+                        <label class="section__label">
+                            <span class="section__label__name">DB Host:Port</span>
+                            <span class="section__label__val">1:2</span>
+                        </label>
+                        <label class="section__label">
+                            <span class="section__label__name">Username</span>
+                            <span class="section__label__val">user</span>
+                        </label>
+                        <label class="section__label">
+                            <span class="section__label__name">State</span>
+                            <span class="section__label__val status-success"></span>
+                        </label>
+                    </div>
+                </section>
+                <section class="section jobsBinlog__row__section">
+                <span class="jobs__section__title section__txt">
+                    sync details
+                </span>
+                    <div>
+                        <label class="section__label">
+                            <span class="section__label__name">Sync Cycle wait time</span>
+                            <span class="section__label__val">240 sec.</span>
+                        </label>
+                        <label class="section__label">
+                            <span class="section__label__name">Retain Count</span>
+                            <span class="section__label__val">1 copy</span>
+                        </label>
+                        <label class="section__label">
+                            <span class="section__label__name">Last lifecycle</span>
+                            <span class="section__label__val">1 minute ago</span>
+                        </label>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="section traffic">
+            <div class="space-between jobsBinlog__head">
+                <h2 class="jobs__section__title section__txt">
+                    Network traffic shows data that is transfered from your server
+                    to Ottomatik (RX), then to your Archive (TX).
+                    <span class="jobsTraffic__head__desc">
+                        All traffic to and from Ottomatik is free!
+                    </span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="jobs__section__title section__txt">
+                        Network Traffic this month Total: 2,234 bytes
+                    </span>
+                    <div class="backup__chart">
+                        <img src="../src/assets/images/chart.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <span class="jobs__section__title section__txt">
+                        Network Traffic by day
+                    </span>
+                    <div class="backup__chart">
+                        <img src="../src/assets/images/chart-area.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--table">
+            <div class="space-between jobsBinlog__head">
+                <h3 class="jobs__section__title col-md-6">
+                    Build a patch to replay statements from the the selected binlogs.
+                    <span class="jobsBinlog__head__desc section__txt">
+                        Timestamps below are shown in the time zone of your
+                        Ottomatik user profile. Your server time zone is assumed to be UTC.
+                    </span>
+                </h3>
+                <div>
+                    <span class="btn-sec">
+                        purge binlog files
+                    </span>
+                    <span class="btn-prim">
+                        Biuld Patch
+                    </span>
+                </div>
+            </div>
+            <div class="table-cont">
+                <table class="table jobsBinlog__table ">
+                    <thead class="table__head container">
+                        <tr class="table__tr table__tr--head row">
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                               <span class="section__txt">
+                                    File
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     Log Created at
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="section__txt">
+                                    Size
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    Statements start at
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    Statements end at
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    log start pos.
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="section__txt">
+                                    log end pos.
+                                </span>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body container">
+                        <tr class="table__tr row">
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     filename
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="status status--blue">
+                                    12 MB
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    1233
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="section__txt">
+                                    1234
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="table__tr row">
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     filename
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="status status--blue">
+                                    12 MB
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    1233
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="section__txt">
+                                    1234
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="table__tr row">
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     filename
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                     10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="status status--blue">
+                                    12 MB
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    10:23 10/12/2018
+                                </span>
+                            </td>
+                            <td class="table__td col-md-2 col-sm-2 col-2 ">
+                                <span class="section__txt">
+                                    1233
+                                </span>
+                            </td>
+                            <td class="table__td col-md-1 col-sm-1 col-1 ">
+                                <span class="section__txt">
+                                    1234
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../dist/bundle.js"></script>
+
+</body>
+</html>
